@@ -4,9 +4,7 @@ html{
   -moz-osx-font-smoothing: grayscale;
 }
 
-body{
-  background-color: #ededed;
-}
+
 
 h1{
   font-family: 'Angkor', 'Bayon';
@@ -14,6 +12,7 @@ h1{
 
 h2{
   font-family: 'Major Mono Display', monospace;
+  font-weight: lighter;
 }
 
 h3{
@@ -23,15 +22,19 @@ h3{
 }
 
 h4{
+  margin-top: 0;
   margin-bottom: : 10px;
   font-family: 'Major Mono Display', monospace;
   font-size: 1.5em;
   font-weight: lighter;}
 
 p{
-  margin: 0;
   font-family: 'VT323', monospace;
   line-height: 8px;
+}
+
+body{
+  background-color: #ededed;
 }
 
 header{
@@ -40,6 +43,8 @@ header{
 }
 
 nav{
+  display: flex;
+  justify-content: flex-end;
 }
 
 ul{
@@ -53,27 +58,46 @@ li{
   margin-left: 5px;
 }
 
-.entrada_1{
-  display: flex;
-  justify-content: space-around 10px;
-  flex-wrap: wrap;
-  height: 300px;
-  margin-right: 20%;
-  padding:30px 30px 30px 0;
-  background-image: url("http://www.techlicks.com/wp-content/uploads/2018/02/GeoTechnoAnime.gif");
-background-repeat: no-repeat;
-background-position: center right;
+::selection{
+  background-color: red;
+  color: white;
 }
 
-.entrada_2{
+.subtitle{
+  font-family: 'Major Mono Display', monospace;
+  font-weight: lighter;
+}
+
+.container{
   display: flex;
-  justify-content: space-around 10px;
-  flex-wrap: wrap;
-  height: 300px;
+  flex-direction: column;
+}
+
+.entrada{
+  display: flex;
+  align-items: flex-start;
+  height: auto;
   margin-right: 20%;
   padding:30px 30px 30px 0;
-  background-image: url("http://www.techlicks.com/wp-content/uploads/2015/01/Chiloverg-Nieve-Anime.gif");
-background-repeat: no-repeat;
-background-position: center right;
-background-size: 300 300px;
+}
+
+.text{
+  display: flex;
+  flex-direction: row;
+  flex-wrap: wrap;
+  max-width: 300px;
+}
+
+.coloredtext{
+    display: inline;
+    background-color: #e4ff009c;
+}
+
+.blancoynegro{
+  z-index: -1;
+  display: flex;
+  margin-right: 100px;
+  margin-left: -50px;
+  max-width: 80vw;
+  filter: grayscale(100);
 }
