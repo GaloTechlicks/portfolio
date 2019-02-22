@@ -18,8 +18,8 @@ h2{
 h3{
   font-family: 'Major Mono Display', monospace;
   font-size: 1em;
-  text-decoration: overline;
 }
+
 
 h4{
   margin-top: 0;
@@ -30,7 +30,15 @@ h4{
 
 p{
   font-family: 'VT323', monospace;
-  line-height: 8px;
+  line-height: 9px;
+}
+
+a{text-decoration: none;
+  color: inherit;
+}
+
+a:hover{
+  text-decoration: overline;
 }
 
 body{
@@ -59,12 +67,10 @@ li{
 }
 
 ::selection{
-  background-color: red;
-  color: white;
+  background-color: #e4ff009c;
 }
 
 .subtitle{
-  font-family: 'Major Mono Display', monospace;
   font-weight: lighter;
 }
 
@@ -85,7 +91,7 @@ li{
   display: flex;
   flex-direction: row;
   flex-wrap: wrap;
-  max-width: 300px;
+  width: 500px;
 }
 
 .coloredtext{
@@ -98,6 +104,6 @@ li{
   display: flex;
   margin-right: 100px;
   margin-left: -50px;
-  max-width: 80vw;
+  max-width: 60vw;
   filter: grayscale(100);
 }
